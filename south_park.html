@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Wolcom To South Park !</title>
+      <style>
+            body {
+                  font-size: 1.2em;
+                  background-image: url(https://wallpapercave.com/wp/Fdh76FQ.jpg);
+
+            }
+            main{
+                  text-align: center;
+                  padding: 10px;
+            }
+
+            header {
+                  background-color: coral;
+                  margin: 15px;
+                  padding: 10px;
+                  border-radius: 15px;
+                  color: white;
+                  text-align: center;
+            }
+
+            form {
+                  /* display: inlineff; */
+                  background-color: rgb(162, 218, 199);
+                  opacity: 0.9;
+                  border-radius: 20px;
+            }
+            .labels{
+                  display: inline-block;
+                  font-size: 20px;
+                  color:white;
+                  width: 40%;
+                  text-align: right;
+                  vertical-align: top;
+                  margin: 10px;
+            }
+            .input-tab{
+                  display: inline-block;
+                  /* padding: 10px; */
+                  /* width: 400px; */
+                  border-radius: 8px;
+                  width: 50%;
+                  text-align: left;
+                  margin: 10px;
+                  
+            }
+            hr{
+                  margin-left: 60px;
+                  margin-right: 60px;
+            }
+      </style>
+</head>
+
+<body>
+      <header>
+            <div class="text-box">
+                  <h1 id="tital">WELCOME TO SOUTH PARK!</h1>
+                  <hr>
+                  <p id="description">Tell us about your exprience with South Park</p>
+            </div>
+      </header>
+      <main class="container">
+
+            <form id="surveyform" method="get">
+
+
+                  <div class="labels">
+                        <label id="name-ladel" form="name">*Full Name</label>
+                        
+                  </div>
+
+
+                  <div class="input-tab">
+                        
+                        <input class="input-field"  type="text" id="name" name="name" placeholder="Enter your name" required    autofocus>
+                  </div>
+
+
+
+                  <div  class="labels">
+                        <label id="email-label" form="email">*Email</label>
+                        
+                  </div>
+                  <div class="input-tab">
+                        <input class="input-filed" type="email" id="email" name="email" placeholder="email@gmail.com" required>
+                  </div>
+
+                  <div class="labels">
+                        <label id="number-leabel" form="number">*Age</label>
+                  </div>
+                  <div class="input-tab">
+                        <input class="input-filed" type="number" id="number" name="number"  min="1"  max="120"  placeholder="15" required>
+                  </div>
+
+                  <div class="labels">
+                        <label for="dropdown" >How do you watch south park</label>
+                  </div>
+
+                  <div class="input-tab">
+                        <select id="dropdown" name="site">
+                              <option disabled value="selected"  >select an option</option>
+                              <option  value="web">Website</option>
+                              <option value="Instagram">Instagram</option>
+                              <option value="Youtub">Youtub</option>
+                              <option value="facebook">facebook</option>
+                              <option value="moj">moj</option>
+
+                        </select>
+                  </div>
+                   <div class="labels">
+                        <label>How much do you like south park</label>
+                   </div>
+
+                  <div class="input-tab">
+                        <input type="radio" name="radio-button" value="love">I love it! <br>
+                        <input type="radio" name="radio-button" value="like">I like it <br>
+                        <input type="radio" name="radio-button" value="ok">It's ok <br>
+                        <input type="radio" name="radio-button" value="really">Not really <br>
+                  </div>
+                   
+                  <div class="labels">
+                        <label for="dropdown">How many seasons of south park have you watched</label>
+                  </div>
+                  <div class="input-tab">
+                        <select id="dropedown" name="seasons">
+                           <option disabled value="selected">select an option</option>
+                           <option value="<=5">0-5</option>
+                           <option value="<=10">6-10</option>
+                           <option value="<=15">10-15</option>
+                           <option value="<=21">15-21</option>
+
+
+                        </select>
+                  </div>
+
+                  <div class="labels">
+                        <label>Who do you watch south park with? <br>(check all that apply):  </label>
+                  </div>
+                  <div class="input-tab">
+                        <input type="checkbox" name="alone" value="alone" >Alone <br>
+                        <input type="checkbox" name="Friends" value="fr" >Friends <br>
+                        <input type="checkbox" name="Family" value="fam" >Family <br>
+                        <input type="checkbox" name="Partner" value="part" >Partner <br>
+                        <input type="checkbox" name="Other" value="Other" >Other <br>
+                  </div>
+
+                  <div class="labels">
+                        <label for="comments" >Tell us more about your favorite character(s) or episode(s)
+                              
+                        </label>
+                  </div>
+                  <div class="input-tab">
+                        <textarea class="input-field" id="comments" name="comments"  rows="12" cols="40" placeholder="your comments..." ></textarea>
+                  </div>
+                  <div class="btn">
+                        <button  id="submit" type="submit">Submit </button>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <!-- <div>
+                        <label>How do you watch South Park ?</label>
+                        <select>
+                              <optgroup>
+                                    <option>Select an option</option>
+                                    <option>Aus</option>
+                                    <option>SA</option>
+                                    <option>WI</option>
+                                    <option>BAN</option>
+                                    <option>PAK</option>
+                                    <option>NZ</option>
+                                    <option>ENG</option>
+                                    <option>IRL</option>
+                                    <option>SL</option>
+                              </optgroup>
+                        </select>
+
+                  </div>
+                  <div>
+                        <label>How much do you like South park ?</label>
+                        <label>(chake all that apply):</label> -->
+
+
+
+
+                  <!-- </div>
+
+                  <div>
+                        <label>Tell us about your favoritecharacter(s) or episode(s)</label>
+                        <textarea rows="40" cols="55"> </textarea>
+                  </div> -->
+
+
+
+            </form>
+            
+
+
+      </main>
+      <footer>
+            <p>&copy; 2022 Beautiful Nature </p>
+      </footer>
+</body>
+
+</html>
